@@ -3,7 +3,7 @@ import {
 	SectionText,
 	SectionTitle,
 } from '../../styles/globalComponents';
-import Button from '../../styles/GlobalComponents/Button';
+import Button from '../../styles/globalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
