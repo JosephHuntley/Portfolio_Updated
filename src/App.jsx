@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Header from './components/header/Header';
 import Theme from './styles/theme';
 import BgAnimation from './components/BackgroundAnimation/BackgroundAnimation';
@@ -10,16 +11,20 @@ import Accomplishments from './components/accomplishments/Accomplishments';
 import Footer from './components/footer/Footer';
 
 function App() {
+	const aboutRef = useRef(null);
+
+	const aboutScroll = () => aboutRef.current.scrollIntoView();
+
 	return (
 		<Theme>
 			<Header />
 			<Section grid>
-				<Hero />
+				<Hero aboutScroll={aboutScroll} />
 				<BgAnimation />
 			</Section>
 			<Projects />
 			<Technologies />
-			<Timeline />
+			<Timeline aboutRef={aboutRef} />
 			<Accomplishments />
 			<Footer />
 		</Theme>

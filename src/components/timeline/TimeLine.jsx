@@ -21,7 +21,7 @@ import { TimeLineData } from '../../constants/constant';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
-const Timeline = () => {
+const Timeline = ({ aboutRef }) => {
 	const [activeItem, setActiveItem] = useState(0);
 	const carouselRef = useRef();
 
@@ -64,7 +64,9 @@ const Timeline = () => {
 	}, []);
 
 	return (
-		<Section id='about'>
+		<Section
+			id='about'
+			ref={aboutRef}>
 			<SectionTitle>About Me</SectionTitle>
 			<SectionText>
 				Experienced Front-End Developer with over three years of experience in
