@@ -2,7 +2,7 @@ import {
 	Section,
 	SectionText,
 	SectionTitle,
-} from '../../styles/GlobalComponents';
+} from '../../styles/globalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
