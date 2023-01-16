@@ -5,7 +5,7 @@ import {
 	SectionDivider,
 	SectionText,
 	SectionTitle,
-} from '../../styles/GlobalComponents';
+} from '../../styles/globalComponents';
 import {
 	List,
 	ListContainer,
