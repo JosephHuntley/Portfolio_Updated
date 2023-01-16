@@ -6,7 +6,7 @@ import {
 import Button from '../../styles/globalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
-const Hero = (props) => (
+const Hero = ({ aboutScroll }) => (
 	<>
 		<Section
 			row
@@ -23,7 +23,7 @@ const Hero = (props) => (
 					HTML, CSS, JavaScript, and ReactJS. Proficient in design frameworks
 					such as MaterialUI and TailwindCSS.
 				</SectionText>
-				<Button onclick="window.location.href='#about';">Learn More</Button>
+				<Button onClick={aboutScroll}>Learn More</Button>
 			</LeftSection>
 		</Section>
 	</>
