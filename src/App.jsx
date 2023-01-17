@@ -9,6 +9,7 @@ import Technologies from './components/technologies/Technologies';
 import Timeline from './components/timeline/TimeLine';
 import Accomplishments from './components/accomplishments/Accomplishments';
 import Footer from './components/footer/Footer';
+import Contact from './components/contact/Contact';
 
 function App() {
 	const aboutRef = useRef(null);
@@ -26,6 +27,7 @@ function App() {
 			<Technologies />
 			<Timeline aboutRef={aboutRef} />
 			<Accomplishments />
+			<Contact />
 			<Footer />
 		</Theme>
 	);
