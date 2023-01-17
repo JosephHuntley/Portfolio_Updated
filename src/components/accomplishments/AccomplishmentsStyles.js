@@ -28,6 +28,10 @@ export const Box = styled.div`
 	height: 144px;
 	padding: 24px;
 	text-align: center;
+	&:hover {
+		background: ${(props) => props.theme.colors.background1};
+		border: 2px solid #212d45;
+	}
 	@media ${(props) => props.theme.breakpoints.lg} {
 		height: 210px;
 	}
