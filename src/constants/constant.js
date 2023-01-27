@@ -35,8 +35,8 @@ export const projects = [
 			'This project is a dashboard for crypto currency, powered by Coinranking and Bing News Search API. It was built using React for the user interface, Redux for state management, and Ant Design for the design system. The dashboard provides an overview of the current prices and performance of major crypto currencies, as well as the latest news and articles related to the crypto market. This project showcases the ability to integrate multiple APIs and create a functional and user-friendly dashboard.',
 		image: 'https://drive.google.com/uc?id=1K0hJc-Tv-mb8ma-9HBf4Z0yebdi9YYne',
 		tags: ['React', 'Ant Design', 'Redux'],
-		source: 'https://github.com/JosephHuntley/Cryptoverse',
-		visit: 'https://josephhuntley.github.io/Cryptoverse/',
+		source: 'https://github.com/JosephHuntley/CryptoNexus',
+		visit: 'https://josephhuntley.github.io/CryptoNexus/',
 		id: 3,
 	},
 ];
