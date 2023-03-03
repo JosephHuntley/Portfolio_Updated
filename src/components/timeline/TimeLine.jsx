@@ -142,7 +142,11 @@ const Timeline = ({ aboutRef }) => {
 							active={activeItem}
 							onClick={(e) => handleClick(e, index)}
 							type='button'>
-							<CarouselButtonDot active={activeItem} />
+							<CarouselButtonDot
+								active={activeItem}
+								aria-label={`Button {index}`}
+								role='button'
+							/>
 						</CarouselButton>
 					);
 				})}

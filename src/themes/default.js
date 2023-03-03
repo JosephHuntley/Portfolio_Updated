@@ -11,6 +11,9 @@ export default {
 		accent1: 'hsl(34.9,98.6%,72.9%)',
 		button: 'hsl(205.1,100%,36.1%)',
 		background2: 'hsl(232.7,27.3%,23.7%)',
+		text: 'rgba(255, 255, 255, 0.9)',
+		title:
+			'linear-gradient(121.57deg,#ffffff 18.77%,rgba(255, 255, 255, 0.66) 60.15%)',
 	},
 	// Breakpoints for responsive design
 	breakpoints: {
