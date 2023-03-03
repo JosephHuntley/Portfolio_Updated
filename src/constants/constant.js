@@ -1,7 +1,7 @@
-import img1 from '../../public/Restaurant.png';
-import img2 from '../../public/GymExercises.jpg';
-import img3 from '../../public/HooBank.png';
-import img4 from '../../public/Cryptoverse.png';
+import img1 from '../../public/Restaurant.webp';
+import img2 from '../../public/GymExercises.webp';
+import img3 from '../../public/HooBank.webp';
+import img4 from '../../public/Cryptoverse.webp';
 
 export const projects = [
 	{
