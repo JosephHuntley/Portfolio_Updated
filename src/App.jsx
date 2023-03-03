@@ -1,11 +1,12 @@
-import { useRef, lazy } from 'react';
-import Header from './components/header/Header';
-import Theme from './styles/theme';
+import { useRef, lazy, Suspense } from 'react';
+import { BarLoader } from 'react-spinners';
+const Header = lazy(() => import('./components/header/Header'));
+const Theme = lazy(() => import('./styles/theme'));
 const BgAnimation = lazy(() =>
 	import('./components/BackgroundAnimation/BackgroundAnimation')
 );
 import { Section } from './styles/globalComponents';
-import Hero from './components/hero/Hero';
+const Hero = lazy(() => import('./components/hero/Hero'));
 const Projects = lazy(() => import('./components/projects/Projects'));
 const Technologies = lazy(() =>
 	import('./components/technologies/Technologies')
@@ -14,8 +15,8 @@ const Timeline = lazy(() => import('./components/timeline/TimeLine'));
 const Accomplishments = lazy(() =>
 	import('./components/accomplishments/Accomplishments')
 );
-import Footer from './components/footer/Footer';
-import Contact from './components/contact/Contact';
+const Footer = lazy(() => import('./components/footer/Footer'));
+const Contact = lazy(() => import('./components/contact/Contact'));
 
 function App() {
 	const aboutRef = useRef(null);
@@ -23,19 +24,21 @@ function App() {
 	const aboutScroll = () => aboutRef.current.scrollIntoView();
 
 	return (
-		<Theme>
-			<Header />
-			<Section grid>
-				<Hero aboutScroll={aboutScroll} />
-				<BgAnimation />
-			</Section>
-			<Projects />
-			<Technologies />
-			<Timeline aboutRef={aboutRef} />
-			<Accomplishments />
-			<Contact />
-			<Footer />
-		</Theme>
+		<Suspense fallback={<BarLoader color='#9cc9e3' />}>
+			<Theme>
+				<Header />
+				<Section grid>
+					<Hero aboutScroll={aboutScroll} />
+					<BgAnimation />
+				</Section>
+				<Projects />
+				<Technologies />
+				<Timeline aboutRef={aboutRef} />
+				<Accomplishments />
+				<Contact />
+				<Footer />
+			</Theme>
+		</Suspense>
 	);
 }
 
