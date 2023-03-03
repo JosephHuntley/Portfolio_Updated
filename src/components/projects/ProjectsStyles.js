@@ -75,7 +75,7 @@ export const CardInfo = styled.p`
 	}
 `;
 
-export const UtilityList = styled.ul`
+export const UtilityList = styled.div`
 	list-style-type: none;
 	padding: 0;
 	display: flex;
