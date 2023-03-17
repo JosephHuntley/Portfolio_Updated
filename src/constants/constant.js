@@ -2,6 +2,7 @@ import img1 from '../../public/Restaurant.webp';
 import img2 from '../../public/GymExercises.webp';
 import img3 from '../../public/HooBank.webp';
 import img4 from '../../public/Cryptoverse.webp';
+import img5 from '../../public/Nexus.webp'
 
 export const projects = [
 	{
