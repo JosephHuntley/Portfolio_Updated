@@ -5,6 +5,16 @@ import img4 from '../../public/Cryptoverse.webp';
 
 export const projects = [
 	{
+		id: 4,
+		title: 'Nexus HRIS',
+		description:
+			'Introducing a cutting-edge HRIS System built with NextJS, TypeScript and Styled Components. Streamlines HR processes with an intuitive interface for employees and managers. Manages employee information, tracks time off and analyzes data. Sleek design with Figma and dynamic Styled Components.  Simplify HR tasks with this innovative system for businesses of all sizes.',
+		image: img5,
+		tags: ['NextJS', 'TypeScript', 'Styled-Components', 'ChartJS'],
+		source: 'https://github.com/JosephHuntley/nexus',
+		visit: 'https://nexus-rose.vercel.app/dashboard',
+	},
+	{
 		title: 'Restaurant Landing Page',
 		description:
 			'Responsive landing page built using TypeScript, ReactJS, and Tailwind CSS to optimize user engagement and conversion. Designed to be fast, optimized for performance, fully responsive and visually-appealing. Skilled in delivering similar results for any project using TypeScript, ReactJS, and Tailwind CSS.',
