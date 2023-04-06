@@ -3,6 +3,7 @@ import img2 from '../../public/GymExercises.webp';
 import img3 from '../../public/HooBank.webp';
 import img4 from '../../public/Cryptoverse.webp';
 import img5 from '../../public/Nexus.webp'
+import img6 from '../../public/ZenithUI.webp'
 
 export const projects = [
 	{
@@ -14,6 +15,16 @@ export const projects = [
 		tags: ['NextJS', 'TypeScript', 'Styled-Components', 'ChartJS'],
 		source: 'https://github.com/JosephHuntley/nexus',
 		visit: 'https://nexus-rose.vercel.app/dashboard',
+	},
+	{
+		id: 5,
+		title: 'Zenith-UI',
+		description:
+			'Introducing Zenith UI. A custom component library designed to streamline web development with a set of reusable components and design elements. Built using the latest web technologies including React, TypeScript, and Styled Components, this UI library is perfect for businesses of all sizes looking to enhance their web development process.',
+		image: img6,
+		tags: ['NextJS', 'TypeScript', 'NPM', "MDX", 'Content Layer'],
+		source: 'https://github.com/JosephHuntley/zenith-ui',
+		visit: 'https://zenith-ui-documentation.vercel.app/',
 	},
 	{
 		title: 'Restaurant Landing Page',
