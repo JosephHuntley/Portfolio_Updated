@@ -10,9 +10,9 @@ export const projects = [
 		id: 4,
 		title: 'Nexus HRIS',
 		description:
-			'Introducing a cutting-edge HRIS System built with NextJS, TypeScript and Styled Components. Streamlines HR processes with an intuitive interface for employees and managers. Manages employee information, tracks time off and analyzes data. Sleek design with Figma and dynamic Styled Components.  Simplify HR tasks with this innovative system for businesses of all sizes.',
+			'This cutting-edge HRIS system streamlines HR processes with an intuitive interface for employees and managers. Built with NextJS, TypeScript, and Styled Components, it manages employee information, tracks time off, and analyzes data. Its sleek design with Figma and dynamic Styled Components simplifies HR tasks for businesses of all sizes. It also utilizes ChartJS for data visualization.',
 		image: img5,
-		tags: ['NextJS', 'TypeScript', 'Styled-Components', 'ChartJS'],
+		tags: ['NextJS', 'TypeScript', 'Styled-Components'],
 		source: 'https://github.com/JosephHuntley/nexus',
 		visit: 'https://nexus-rose.vercel.app/dashboard',
 	},
@@ -20,16 +20,15 @@ export const projects = [
 		id: 5,
 		title: 'Zenith-UI',
 		description:
-			'Introducing Zenith UI. A custom component library designed to streamline web development with a set of reusable components and design elements. Built using the latest web technologies including React, TypeScript, and Styled Components, this UI library is perfect for businesses of all sizes looking to enhance their web development process.',
+			'Introducing Zenith UI, a custom component library built using React, TypeScript, and Styled Components. This UI library streamlines web development with a set of reusable components and design elements, perfect for businesses of all sizes looking to enhance their web development process. It also utilizes NPM and MDX for content layer.',
 		image: img6,
-		tags: ['NextJS', 'TypeScript', 'NPM', "MDX", 'Content Layer'],
+		tags: ['NextJS', 'TypeScript', "MDX", 'Content Layer'],
 		source: 'https://github.com/JosephHuntley/zenith-ui',
-		visit: 'https://zenith-ui-documentation.vercel.app/',
-	},
+		visit: 'https://zenith-ui-documentation.vercel.app/',	},
 	{
 		title: 'Restaurant Landing Page',
 		description:
-			'Responsive landing page built using TypeScript, ReactJS, and Tailwind CSS to optimize user engagement and conversion. Designed to be fast, optimized for performance, fully responsive and visually-appealing. Skilled in delivering similar results for any project using TypeScript, ReactJS, and Tailwind CSS.',
+			'This is a responsive landing page designed to optimize user engagement and conversion. It was built using TypeScript, ReactJS, and Tailwind CSS, ensuring high performance, full responsiveness, and a visually-appealing design. I have the expertise to deliver similar results for any project using these modern front-end technologies.',
 		image: img1,
 		tags: ['React', 'Tailwind', 'Typescript'],
 		source: 'https://github.com/JosephHuntley/restaurant',
@@ -39,7 +38,7 @@ export const projects = [
 	{
 		title: 'Gym Exercises',
 		description:
-			'This project is a responsive webpage that uses exerciseDB and YouTube Search API from RapidAPI to provide users with popular exercises and corresponding demonstration videos. Built using modern front-end technologies and optimized for all screen sizes. It allows users to search for specific exercises, filter by muscle group and save their favorites for easy access.',
+			'This responsive webpage allows users to search for popular exercises and corresponding demonstration videos. It utilizes exerciseDB and YouTube Search API from RapidAPI to filter exercises by muscle group and save favorites for easy access. Built with modern front-end technologies, it is optimized for all screen sizes and offers a seamless user experience.',
 		image: img2,
 		tags: ['React', 'Material UI'],
 		source: 'https://github.com/JosephHuntley/gym_exercises',
@@ -49,9 +48,9 @@ export const projects = [
 	{
 		title: 'HooBank',
 		description:
-			'Responsive website based on the design by OneWeekWonders, serves as the landing page for a digital bank called HooBank. Built using ReactJS for dynamic user interface and Tailwind for styling, providing sleek and modern design. Optimized for all screen sizes, ensuring seamless user experience on both desktop and mobile devices. ',
+			'This responsive website is the landing page for a digital bank called HooBank, based on the design by OneWeekWonders. Built using ReactJS and Tailwind, it offers a sleek and modern design, optimized for all screen sizes. Its dynamic user interface ensures a seamless experience on both desktop and mobile devices.',
 		image: img3,
-		tags: ['React', 'Tailwind'],
+		tags: ['React', 'Tailwind', 'Figma'],
 		source: 'https://github.com/JosephHuntley/bank_app',
 		visit: 'https://josephhuntley.github.io/bank_app/',
 		id: 2,
@@ -59,7 +58,7 @@ export const projects = [
 	{
 		title: 'CryptoNexus',
 		description:
-			'This project is a dashboard for crypto currency, powered by Coinranking and Bing News Search API. It was built using React for the user interface, Redux for state management, and Ant Design for the design system. The dashboard provides an overview of the current prices and performance of major crypto currencies, as well as the latest news and articles related to the crypto market. This project showcases the ability to integrate multiple APIs and create a functional and user-friendly dashboard.',
+			'This project is a dashboard for cryptocurrency, powered by Coinranking and Bing News Search API. Built using React, Redux, and Ant Design, it provides an overview of the current prices and performance of major cryptocurrencies, as well as the latest news and articles related to the crypto market. It showcases the ability to integrate multiple APIs and create a functional and user-friendly dashboard.',
 		image: img4,
 		tags: ['React', 'Ant Design', 'Redux'],
 		source: 'https://github.com/JosephHuntley/CryptoNexus',
