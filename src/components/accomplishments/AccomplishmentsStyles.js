@@ -29,10 +29,7 @@ export const Box = styled.div`
 	padding: 24px;
 	text-align: center;
 	box-shadow: 4px 4px 20px rgba(80, 78, 78, 0.5);
-	&:hover {
-		background: ${(props) => props.theme.colors.background1};
-		border: 2px solid #212d45;
-	}
+	
 	@media ${(props) => props.theme.breakpoints.lg} {
 		height: 210px;
 	}
