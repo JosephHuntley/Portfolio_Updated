@@ -48,9 +48,10 @@ export const List = styled.ul`
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		display: flex;
-		flex-direction: column;
+		/* display: flex;
+		flex-direction: column; */
 		margin: 32px 0;
+		grid-template-columns: 1fr 1fr;
 	}
 `;
 
@@ -92,6 +93,8 @@ export const ListParagraph = styled.p`
 	font-size: 18px;
 	line-height: 30px;
 	color: ${(props) => props.theme.colors.text};
+	display: grid;
+	grid-template-rows: 1fr;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: 16px;
