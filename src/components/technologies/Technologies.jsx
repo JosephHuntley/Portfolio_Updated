@@ -30,7 +30,7 @@ const Technologies = () => (
 				<ListContainer>
 					<ListTitle>Front-End</ListTitle>
 					<ListParagraph>
-						Experience with <br />
+					
 						React.js <br />
 						Redux <br />
 						JEST <br />
@@ -47,7 +47,7 @@ const Technologies = () => (
 				<ListContainer>
 					<ListTitle>Back-End</ListTitle>
 					<ListParagraph>
-						Experience with <br />
+						
 						NodeJS <br />
 						ExpressJS
 						<br />
@@ -68,7 +68,7 @@ const Technologies = () => (
 				<ListContainer>
 					<ListTitle>UI</ListTitle>
 					<ListParagraph>
-						Experience with <br />
+						
 						CSS3
 						<br />
 						Tailwind
