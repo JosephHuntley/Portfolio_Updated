@@ -45,16 +45,16 @@ export const projects = [
 		visit: 'https://josephhuntley.github.io/gym_exercises/',
 		id: 1,
 	},
-	{
-		title: 'HooBank',
-		description:
-			'This responsive website is the landing page for a digital bank called HooBank, based on the design by OneWeekWonders. Built using ReactJS and Tailwind, it offers a sleek and modern design, optimized for all screen sizes. Its dynamic user interface ensures a seamless experience on both desktop and mobile devices.',
-		image: img3,
-		tags: ['React', 'Tailwind', 'Figma'],
-		source: 'https://github.com/JosephHuntley/bank_app',
-		visit: 'https://josephhuntley.github.io/bank_app/',
-		id: 2,
-	},
+	// {
+	// 	title: 'HooBank',
+	// 	description:
+	// 		'This responsive website is the landing page for a digital bank called HooBank, based on the design by OneWeekWonders. Built using ReactJS and Tailwind, it offers a sleek and modern design, optimized for all screen sizes. Its dynamic user interface ensures a seamless experience on both desktop and mobile devices.',
+	// 	image: img3,
+	// 	tags: ['React', 'Tailwind', 'Figma'],
+	// 	source: 'https://github.com/JosephHuntley/bank_app',
+	// 	visit: 'https://josephhuntley.github.io/bank_app/',
+	// 	id: 2,
+	// },
 	{
 		title: 'CryptoNexus',
 		description:
