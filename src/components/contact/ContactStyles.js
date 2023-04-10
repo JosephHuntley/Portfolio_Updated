@@ -30,10 +30,12 @@ export const TextArea = styled.textarea`
 	padding: 1.5rem;
 	border-radius: 0.5rem;
 	background: transparent;
+	border: none;
+	outline: none;
 	border: 2px solid rgba(242, 245, 247, 0.3);
 	color: ${(props) => props.theme.colors.primary1};
 
 	&:focus{
-		border-bottom: 2px solid rgba(242, 245, 247, 1);
+		border: 2px solid rgba(242, 245, 247, 1);
 	}
 `;
