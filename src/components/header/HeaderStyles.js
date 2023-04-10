@@ -6,9 +6,15 @@ export const Container = styled.header`
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 1fr;
 	grid-column-gap: 2rem;
-	padding: 4rem;
-	padding-bottom:2rem;
-	padding-top: 2rem;
+	padding: 2rem 4.8rem;
+	margin: 0 10rem;
+	
+
+	@media ${props => props.theme.breakpoints.md} {
+		margin: 0;
+		padding: 1.6rem;
+		padding-bottom: 0;
+	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: grid;
@@ -16,6 +22,7 @@ export const Container = styled.header`
 		grid-template-rows: repeat(2, 60px);
 		grid-column-gap: 0.5rem;
 		grid-row-gap: 0.5rem;
+		
 	}
 `;
 export const Div1 = styled.div`
