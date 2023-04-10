@@ -41,6 +41,7 @@ export const TitleContent = styled.div`
 	text-align: center;
 	z-index: 20;
 	width: 100%;
+	color: #e4e6e7;
 `;
 
 export const HeaderThree = styled.h3`
