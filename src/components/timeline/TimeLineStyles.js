@@ -50,7 +50,7 @@ export const CarouselItem = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		margin-left: 32px;
 		min-width: 120px;
-		background: #0e131f;
+		background: transparent;
 		padding: 4px;
 		align-content: start;
 		scroll-snap-align: start;
@@ -60,7 +60,7 @@ export const CarouselItem = styled.div`
 		height: fit-content;
 
 		${(props) =>
-			props.active === props.index ? `opacity: 1` : `opacity: 0.5`};
+			props.active === props.index ? `opacity: 1` : `opacity: 0.7`};
 	}
 `;
 
