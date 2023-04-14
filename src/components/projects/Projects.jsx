@@ -50,12 +50,12 @@ const Projects = () => (
 						<UtilityList>
 							<ExternalLinks
 								href={p.visit}
-								target='_blank'>
+								target='_blank' rel="noreferrer">
 								Demo
 							</ExternalLinks>
 							<ExternalLinks
 								href={p.source}
-								target='_blank'>
+								target='_blank' rel="noreferrer">
 								Source
 							</ExternalLinks>
 						</UtilityList>

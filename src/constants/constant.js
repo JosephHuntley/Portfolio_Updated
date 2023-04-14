@@ -1,9 +1,9 @@
-import img1 from '../../public/Restaurant.webp';
-import img2 from '../../public/GymExercises.webp';
-import img3 from '../../public/FinanceFlow.webp';
-import img4 from '../../public/Cryptoverse.webp';
-import img5 from '../../public/Nexus.webp'
-import img6 from '../../public/ZenithUI.webp'
+import img1 from '/Restaurant.webp';
+import img2 from '/GymExercises.webp';
+import img3 from '/FinanceFlow.webp';
+import img4 from '/Cryptoverse.webp';
+import img5 from '/Nexus.webp'
+import img6 from '/ZenithUI.webp'
 
 export const projects = [
 	{
