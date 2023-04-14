@@ -42,6 +42,7 @@ export const Box = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		height: 110px;
 		padding: 12px;
+		box-shadow: 4px 4px 12px rgba(80, 78, 78, 0.5);
 
 		&:nth-child(2n) {
 			grid-row: 2;
