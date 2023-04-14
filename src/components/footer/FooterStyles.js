@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FooterWrapper = styled.section`
+export const FooterWrapper = styled.footer`
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	width: calc(100vw - 96px);
 	max-width: 1040px;
