@@ -9,7 +9,7 @@ export const ImageContainer = styled.div`
 	);
 	width: 100%;
 	padding: 60px;
-	margin-top: 48px;
+	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -111,6 +111,7 @@ export const ListItem = styled.li`
 	max-width: 320px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		max-width: 203px;
@@ -119,7 +120,6 @@ export const ListItem = styled.li`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		margin-bottom: 14px;
 		max-width: 320px;
-		flex-direction: row;
 	}
 `;
 

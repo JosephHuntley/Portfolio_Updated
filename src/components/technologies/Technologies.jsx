@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact, DiCss3Full } from 'react-icons/di';
 import {
 	Section,
 	SectionDivider,
@@ -7,6 +7,7 @@ import {
 	SectionTitle,
 } from '../../styles/globalComponents';
 import {
+	ImageContainer,
 	List,
 	ListContainer,
 	ListItem,
@@ -18,15 +19,15 @@ const Technologies = () => (
 	<Section id='tech'>
 		<SectionDivider divider />
 		<SectionTitle>Technologies</SectionTitle>
-		<SectionText>
+		<SectionText nopadding>
 			I've worked with a range a technologies in the web development world. From
 			Back-end To Design
 		</SectionText>
 		<List>
 			<ListItem>
-				<picture>
+				<ImageContainer>
 					<DiReact size='3rem' />
-				</picture>
+				</ImageContainer>
 				<ListContainer>
 					<ListTitle>Front-End</ListTitle>
 					<ListParagraph>
@@ -41,9 +42,9 @@ const Technologies = () => (
 				</ListContainer>
 			</ListItem>
 			<ListItem>
-				<picture>
+				<ImageContainer>
 					<DiFirebase size='3rem' />
-				</picture>
+				</ImageContainer>
 				<ListContainer>
 					<ListTitle>Back-End</ListTitle>
 					<ListParagraph>
@@ -62,9 +63,9 @@ const Technologies = () => (
 				</ListContainer>
 			</ListItem>
 			<ListItem>
-				<picture>
-					<DiZend size='3rem' />
-				</picture>
+				<ImageContainer>
+					<DiCss3Full size='3rem' />
+				</ImageContainer>
 				<ListContainer>
 					<ListTitle>UI</ListTitle>
 					<ListParagraph>
@@ -73,7 +74,7 @@ const Technologies = () => (
 						<br />
 						Tailwind
 						<br />
-						Material UI
+						Chakra UI
 						<br />
 						Styled Component
 					</ListParagraph>

@@ -59,7 +59,7 @@ export const SectionText = styled.p`
 	font-size: 24px;
 	line-height: 40px;
 	font-weight: 300;
-	padding-bottom: 3.6rem;
+	padding-bottom: ${props => props.nopadding || '3.6rem'};
 	color: ${(props) => props.theme.colors.text};
 
 	@media ${(props) => props.theme.breakpoints.md} {
