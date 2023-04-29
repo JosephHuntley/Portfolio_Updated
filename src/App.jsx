@@ -20,6 +20,7 @@ const Contact = lazy(() => import('./components/contact/Contact'));
 
 function App() {
 	const aboutRef = useRef(null);
+	document.title = "Joseph Huntley | .NET and React Specialist";
 
 	const aboutScroll = () => aboutRef.current.scrollIntoView();
 
