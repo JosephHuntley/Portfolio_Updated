@@ -1,4 +1,4 @@
-import { useRef, lazy, Suspense } from "react";
+import { useRef, lazy, Suspense, useState, useEffect } from "react";
 import { BarLoader } from "react-spinners";
 const Header = lazy(() => import("./components/header/Header"));
 const Theme = lazy(() => import("./styles/theme"));
@@ -17,9 +17,18 @@ const Accomplishments = lazy(() =>
 );
 const Footer = lazy(() => import("./components/footer/Footer"));
 const Contact = lazy(() => import("./components/contact/Contact"));
+import useWindowSize from "./customHooks/useWindowSize";
+import Menu from "./components/Menu/Menu";
 
 function App() {
   const aboutRef = useRef(null);
+  const [isMenu, setIsMenu] = useState(true); // Defaults to mobile view
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    setIsMenu(width <= 1124);
+  }, [width]);
+
   document.title = "Joseph Huntley | .NET & React Specialist";
 
   const aboutScroll = () => aboutRef.current.scrollIntoView();
@@ -27,7 +36,7 @@ function App() {
   return (
     <Suspense fallback={<BarLoader color="#9cc9e3" />}>
       <Theme>
-        <Header />
+        {isMenu ? <Menu /> : <Header />}
         <Section grid>
           <Hero aboutScroll={aboutScroll} />
           <BgAnimation />
