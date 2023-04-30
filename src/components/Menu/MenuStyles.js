@@ -6,7 +6,7 @@ export const Header = styled.header`
   justify-content: space-between;
   padding: 0 1.6rem;
   position: fixed;
-  z-index: 15;
+  z-index: 10;
 
   background-color: ${(props) => props.theme.colors.background1};
 `;
@@ -19,10 +19,12 @@ export const MenuStyle = styled.section`
   background-color: ${(props) => props.theme.colors.background1};
 
   position: fixed;
-  z-index: 10;
+  z-index: 5;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  overflow-x: hidden;
 `;
 
 export const Nav = styled.nav`
@@ -32,6 +34,8 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
+  position: relative;
+  z-index: 15;
 `;
 
 export const Links = styled.ul`
@@ -53,5 +57,32 @@ export const SocialIcons = styled.a`
   &:hover {
     background-color: #212d45;
     transform: scale(1.2);
+  }
+`;
+
+export const DivBlur = styled.div`
+  width: 450px;
+  height: 450px;
+  border-radius: 9999px;
+  opacity: 0.3;
+  filter: blur(24px);
+
+  background-color: ${(props) => props.theme.colors.accent2};
+
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const NavLink = styled.a`
+  font-size: 2.5rem;
+  color: ${(props) => props.theme.colors.text};
+  transition: 0.4s ease;
+  &:hover {
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
   }
 `;

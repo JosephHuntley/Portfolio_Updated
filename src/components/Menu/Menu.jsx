@@ -8,8 +8,9 @@ import {
   Icons,
   Links,
   SocialIcons,
+  DivBlur,
+  NavLink,
 } from "./MenuStyles";
-import { NavLink } from "../header/HeaderStyles";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Menu = () => {
@@ -51,17 +52,18 @@ const Menu = () => {
                 target="_blank"
                 aria-label="Check out my Github"
               >
-                <AiFillGithub size="3rem" />
+                <AiFillGithub size="4.5rem" />
               </SocialIcons>
               <SocialIcons
                 href="https://linkedin.com/in/joseph-huntley-187636196"
                 target="_blank"
                 aria-label="Check out my LinkedIn"
               >
-                <AiFillLinkedin size="3rem" />
+                <AiFillLinkedin size="4.5rem" />
               </SocialIcons>
             </Icons>
           </Nav>
+          <DivBlur />
         </MenuStyle>
       ) : null}
     </>
