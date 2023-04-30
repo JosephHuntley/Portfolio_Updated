@@ -6,7 +6,7 @@ export const Header = styled.header`
   justify-content: space-between;
   padding: 0 1.6rem;
   position: fixed;
-  z-index: 5;
+  z-index: 15;
 
   background-color: ${(props) => props.theme.colors.background1};
 `;
