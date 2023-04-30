@@ -23,7 +23,7 @@ export const Boxes = styled.div`
 `;
 
 export const Box = styled.div`
-  background: ${(props) => props.theme.colors.background2};
+  background: ${(props) => props.theme.colors.background3};
   border-radius: 12px;
   height: 144px;
   padding: 24px;
