@@ -13,7 +13,7 @@ export const projects = [
       "This cutting-edge HRIS system streamlines HR processes with an intuitive interface for employees and managers. Built with NextJS, TypeScript, and Styled Components, it manages employee information, tracks time off, and analyzes data. Its sleek design with Figma and dynamic Styled Components simplifies HR tasks for businesses of all sizes. It also utilizes ChartJS for data visualization.",
     image: img5,
     tags: ["NextJS", "TypeScript", "Styled-Components"],
-    source: "https://github.com/JosephHuntley/nexus",
+    source: "https://github.com/JosephHuntley/Nexus-HRIS-Fullstack",
     visit: "https://nexus-rose.vercel.app/dashboard",
   },
   {
