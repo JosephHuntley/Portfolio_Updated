@@ -11,11 +11,13 @@
     "pretty": "prettier --write ."
   },
   "dependencies": {
+    "@apollo/client": "^3.7.15",
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "emailjs": "^4.0.1",
+    "graphql": "^16.6.0",
     "hamburger-react": "^2.5.0",
     "jest": "^29.3.1",
     "prettier": "^2.8.8",

@@ -19,6 +19,7 @@ const Footer = lazy(() => import("./components/footer/Footer"));
 const Contact = lazy(() => import("./components/contact/Contact"));
 import useWindowSize from "./customHooks/useWindowSize";
 import Menu from "./components/Menu/Menu";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   const aboutRef = useRef(null);
@@ -45,6 +46,7 @@ function App() {
         <Technologies />
         <Timeline aboutRef={aboutRef} />
         <Accomplishments />
+        <Blog />
         <Contact />
         <Footer />
       </Theme>

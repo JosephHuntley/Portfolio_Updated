@@ -28,6 +28,8 @@ const Header = () => {
         <NavLink href="#tech">Technologies</NavLink>
 
         <NavLink href="#about">About</NavLink>
+
+        <NavLink href="#blog">Blog</NavLink>
       </Div2>
       <Div3>
         <SocialIcons
