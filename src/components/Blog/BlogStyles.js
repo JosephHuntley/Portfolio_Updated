@@ -8,6 +8,10 @@ export const Grid = styled.div`
   row-gap: 64px;
   margin-top: 24px;
   margin-bottom: 40px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const BlogCard = styled.div`
@@ -19,7 +23,7 @@ export const BlogCard = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    height: initial;
+    min-height: 450px;
   }
 `;
 
