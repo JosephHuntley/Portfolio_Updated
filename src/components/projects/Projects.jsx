@@ -35,7 +35,9 @@ const Projects = () => (
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
             <div>
-              <TitleContent>Stack</TitleContent>
+              <TitleContent style={{ fontSize: "2rem" }}>
+                Technology
+              </TitleContent>
               <TagList>
                 {p.tags.map((t, i) => {
                   return <Tag key={i}>{t}</Tag>;
@@ -44,10 +46,7 @@ const Projects = () => (
             </div>
             <UtilityList>
               <ExternalLinks href={p.visit} target="_blank" rel="noreferrer">
-                Demo
-              </ExternalLinks>
-              <ExternalLinks href={p.source} target="_blank" rel="noreferrer">
-                Source
+                Read More
               </ExternalLinks>
             </UtilityList>
           </BlogCard>
