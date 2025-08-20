@@ -45,9 +45,10 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={p.visit} target="_blank" rel="noreferrer">
+              {/* Uncomment once links are attached  */}
+              {/* <ExternalLinks href={p.visit} target="_blank" rel="noreferrer">
                 Read More
-              </ExternalLinks>
+              </ExternalLinks> */}
             </UtilityList>
           </BlogCard>
         );
