@@ -19,7 +19,7 @@ const Header = () => {
           style={{ display: "flex", alignItems: "center", color: "white" }}
         >
           <DiCssdeck size="3rem" />
-          <span style={{ fontSize: "2rem" }}>Portfolio</span>
+          <span style={{ fontSize: "2rem" }}>Joseph Huntley</span>
         </a>
       </Div1>
       <Div2>
