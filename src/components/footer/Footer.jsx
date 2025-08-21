@@ -1,5 +1,6 @@
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { SiHackthebox } from "react-icons/si";
 
 import { SocialIcons } from "../header/HeaderStyles";
 import {
@@ -31,7 +32,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>.NET and React Specialist</Slogan>
+          <Slogan>Cyber Security Specialist</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons
@@ -48,9 +49,9 @@ const Footer = () => {
           >
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          {/* <SocialIcons href='https://google.com'>
-						<AiFillInstagram size='3rem' />
-					</SocialIcons> */}
+          <SocialIcons href="https://app.hackthebox.com/profile/2520835">
+            <SiHackthebox size="3rem" />
+          </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>

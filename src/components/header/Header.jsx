@@ -1,4 +1,5 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { SiHackthebox } from "react-icons/si";
 import { DiCssdeck } from "react-icons/di";
 
 import {
@@ -45,6 +46,9 @@ const Header = () => {
           aria-label="Check out my LinkedIn"
         >
           <AiFillLinkedin size="3rem" />
+        </SocialIcons>
+        <SocialIcons href="https://app.hackthebox.com/profile/2520835">
+          <SiHackthebox size="3rem" />
         </SocialIcons>
       </Div3>
     </Container>
