@@ -16,26 +16,26 @@ export const projects = [
     source: "",
     visit: "",
   },
-  // {
-  //   id: 5,
-  //   title: "Zenith-UI",
-  //   description:
-  //     "Introducing Zenith UI, a custom component library built using React, TypeScript, and Styled Components. This UI library streamlines web development with a set of reusable components and design elements, perfect for businesses of all sizes looking to enhance their web development process. It also utilizes NPM and MDX for content layer.",
-  //   image: img6,
-  //   tags: ["NextJS", "TypeScript", "MDX", "Content Layer"],
-  //   source: "https://github.com/JosephHuntley/zenith-ui",
-  //   visit: "https://zenith-ui-documentation.vercel.app/",
-  // },
-  // {
-  //   title: "FinanceFlow",
-  //   description:
-  //     "This responsive website is the landing page for a digital bank called FinanceFlow, based on the design by Ash Studio. Built using SolidJS and Tailwind, it offers a sleek and modern design, optimized for all screen sizes. Its dynamic user interface ensures a seamless experience on both desktop and mobile devices.",
-  //   image: img3,
-  //   tags: ["SolidJS", "Tailwind", "TypeScript", "Figma"],
-  //   source: "https://github.com/JosephHuntley/FinanceFlow",
-  //   visit: "https://finance-flow-six.vercel.app",
-  //   id: 2,
-  // },
+  {
+    id: 5,
+    title: "Malware Analyst Lab",
+    description:
+      "The Malware Analyst Lab consists of isolated virtual environments running REMnux (Linux) and FlareVM (Windows) to enable safe static and dynamic malware analysis. The lab includes tools such as ProcMon, Regshot, and Wireshark for monitoring malware processes, Windows Registry changes, and network activity. Memory forensics is performed using Volatility to detect indicators of compromise (IoCs) and analyze running processes, providing a controlled environment for comprehensive malware investigation and research.",
+    image: img6,
+    tags: ["REMnux", "FlareVM", "ProcMon", "Regshot", "Wireshark"],
+    source: "",
+    visit: "",
+  },
+  {
+    title: "Red Team Lab",
+    description:
+      "The Red Team Lab consists of a controlled environment featuring Kali Linux, ParrotOS, and vulnerable targets such as DVWA, designed for practicing adversary emulation. The lab enables reconnaissance and vulnerability enumeration using tools like Nmap, and supports exploitation of application and service vulnerabilities with Metasploit to simulate gaining shell access and performing post-exploitation persistence. This setup provides a safe, hands-on environment for learning offensive security techniques.",
+    image: img3,
+    tags: ["Kali", "Parrot", "DVWA", "Nmap", "Metasploit"],
+    source: "",
+    visit: "",
+    id: 2,
+  },
   // {
   //   title: "Restaurant Landing Page",
   //   description:

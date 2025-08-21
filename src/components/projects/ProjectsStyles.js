@@ -28,10 +28,14 @@ export const GridContainer = styled.section`
 `;
 export const BlogCard = styled.div`
   border-radius: 10px;
+  padding-top: 1rem;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 450px;
-  height: 800px;
+  min-height: 450px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
     height: initial;
