@@ -80,6 +80,13 @@ const Timeline = ({ aboutRef }) => {
         memory analysis, disk forensics, and incident response, I bring a
         well-rounded approach to cybersecurity that bridges defense and
         investigation.
+        <br />
+        <br />I am actively pursuing CompTIA Security+ and CySA+ certifications
+        while building hands-on experience through local cybersecurity labs. By
+        leveraging virtual machines to simulate complex external networks, I
+        gain practical insights into threat detection, analysis, and
+        response—bridging the gap between theoretical knowledge and real-world
+        application.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
