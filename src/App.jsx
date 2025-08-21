@@ -46,7 +46,7 @@ function App() {
         <Technologies />
         <Timeline aboutRef={aboutRef} />
         <Accomplishments />
-        <Blog />
+        {/* <Blog /> */}
         <Contact />
         <Footer />
       </Theme>

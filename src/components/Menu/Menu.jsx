@@ -45,9 +45,9 @@ const Menu = () => {
               <li onClick={() => setIsOpen(false)}>
                 <NavLink href="#about">About</NavLink>
               </li>
-              <li onClick={() => setIsOpen(false)}>
-                <NavLink href="#blog">Blog</NavLink>
-              </li>
+              {/* <li onClick={() => setIsOpen(false)}>
+                <NavLink href="#blog">Blog</NavLink> 
+              </li>*/}
             </Links>
             <Icons>
               <SocialIcons
