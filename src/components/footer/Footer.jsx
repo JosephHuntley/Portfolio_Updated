@@ -40,17 +40,17 @@ const Footer = () => {
             target="_blank"
             aria-label="Check out my Github"
           >
-            <AiFillGithub size="3rem" />
+            <AiFillGithub size={48} />
           </SocialIcons>
           <SocialIcons
             href="https://linkedin.com/in/joseph-huntley-187636196"
             target="_blank"
             aria-label="Check out my LinkedIn"
           >
-            <AiFillLinkedin size="3rem" />
+            <AiFillLinkedin size={48} />
           </SocialIcons>
           <SocialIcons href="https://app.hackthebox.com/profile/2520835">
-            <SiHackthebox size="3rem" />
+            <SiHackthebox size={48} />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
