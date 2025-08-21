@@ -69,9 +69,26 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2019, text: "Began College" },
-  { year: 2020, text: "Started my Programming Journey" },
-  { year: 2021, text: "Began my Technical Apprenticeship" },
-  { year: 2022, text: "Acquired AWS Certifications" },
-  { year: 2023, text: "" },
+  { year: 2019, text: "Began College, starting my journey into Cybersecurity" },
+  { year: 2020, text: "Started Programming and Software Development" },
+  {
+    year: 2021,
+    text: "Began Technical Apprenticeship in Software Development",
+  },
+  {
+    year: 2022,
+    text: "Earned AWS Certifications and expanded knowledge in Cloud Architecture",
+  },
+  {
+    year: 2023,
+    text: "Gained professional experience in Front-End Development",
+  },
+  {
+    year: 2024,
+    text: "Focused on Anti-Forensic Techniques in Memory and Incident Response research",
+  },
+  {
+    year: 2025,
+    text: "Continuing professional growth in Cybersecurity (to be updated…)",
+  },
 ];

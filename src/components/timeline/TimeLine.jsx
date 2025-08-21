@@ -67,17 +67,19 @@ const Timeline = ({ aboutRef }) => {
     <Section id="about" ref={aboutRef}>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Experienced Front-End Developer with over three years of experience in
-        HTML, CSS, JavaScript, and ReactJS. Proficient in design frameworks such
-        as MaterialUI and TailwindCSS.
+        I’m a front-end developer turned cybersecurity professional with a
+        strong foundation in defensive security and digital forensics. My work
+        centers on Blue Team operations, leveraging tools like pfSense, Security
+        Onion, and Wazuh to harden systems, monitor threats, and respond to
+        incidents.
         <br />
         <br />
-        Successfully built and launched several web applications using Rest APIs
-        and Single Page Application (SPA) architecture. Contributed to the
-        development of full-stack applications using the MERN tech stack and
-        backend technologies such as NodeJS and ExpressJS. Continuing to expand
-        my knowledge and skills in backend technologies such as ASP.DOTNET, and
-        both SQL and No-SQL databases.
+        To strengthen my defensive capabilities, I also test Red Team techniques
+        such as vulnerability scanning and exploitation, allowing me to better
+        understand attacker behavior. Combined with hands-on experience in
+        memory analysis, disk forensics, and incident response, I bring a
+        well-rounded approach to cybersecurity that bridges defense and
+        investigation.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
