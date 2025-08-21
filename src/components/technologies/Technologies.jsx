@@ -1,5 +1,6 @@
-import React from "react";
-import { DiFirebase, DiReact, DiCss3Full } from "react-icons/di";
+import { SlMagnifier } from "react-icons/sl";
+import { CiLock } from "react-icons/ci";
+import { RiTerminalLine } from "react-icons/ri";
 import {
   Section,
   SectionDivider,
@@ -20,60 +21,60 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText nopadding>
-      I've worked with a range a technologies in the web development world. From
-      Back-end To Design
+      Worked with a range of cybersecurity technologies with a primary focus on
+      Blue Team operations, while also testing Red Team techniques to build a
+      complete, well-rounded understanding of the threat landscape.
     </SectionText>
     <List>
       <ListItem>
         <ImageContainer>
-          <DiReact size="3rem" />
+          <CiLock size={64} />
         </ImageContainer>
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Blue-Team</ListTitle>
           <ListParagraph>
-            React.js <br />
-            Redux <br />
-            JEST <br />
-            NextJS <br />
-            Typescript
+            Firewall: pfSense
             <br />
+            IDPS: Security Onion
+            <br />
+            SEIM: Wazuh <br />
+            Hardening Systems <br />
+            Bash & Python Scripting
+            <br />
+            Log Analysis
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <ImageContainer>
-          <DiFirebase size="3rem" />
+          <SlMagnifier size={64} />
         </ImageContainer>
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Forensic</ListTitle>
           <ListParagraph>
-            NodeJS <br />
-            ExpressJS
+            Memory Analysis: Volatile
             <br />
-            C#
+            Disk Imaging: FTK Imager <br />
+            Disk Analysis: TSK & Autopsy
             <br />
-            .NET Core
+            Malware Analysis
             <br />
-            SQL
-            <br />
-            MongoDB
+            Timeline Analysis
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <ImageContainer>
-          <DiCss3Full size="3rem" />
+          <RiTerminalLine size={64} />
         </ImageContainer>
         <ListContainer>
-          <ListTitle>UI</ListTitle>
+          <ListTitle>Red-Team</ListTitle>
           <ListParagraph>
-            CSS3
+            Vulnerability Scanning: Nmap
             <br />
-            Tailwind
+            Web Application Testing
             <br />
-            Chakra UI
-            <br />
-            Styled Component
+            Metasploit
           </ListParagraph>
         </ListContainer>
       </ListItem>
