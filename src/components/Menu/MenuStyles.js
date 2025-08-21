@@ -45,7 +45,7 @@ export const Links = styled.ul`
 `;
 
 export const Icons = styled.div`
-  width: 126px;
+  width: 50vw;
   display: flex;
   justify-content: space-between;
 `;

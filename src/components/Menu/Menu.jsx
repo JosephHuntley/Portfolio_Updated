@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { DiCssdeck } from "react-icons/di";
 import { Divide as Hamburger } from "hamburger-react";
+import { SiHackthebox } from "react-icons/si";
 import {
   Header,
   MenuStyle,
@@ -55,14 +56,21 @@ const Menu = () => {
                 target="_blank"
                 aria-label="Check out my Github"
               >
-                <AiFillGithub size="4.5rem" />
+                <AiFillGithub size={48} />
               </SocialIcons>
               <SocialIcons
                 href="https://linkedin.com/in/joseph-huntley-187636196"
                 target="_blank"
                 aria-label="Check out my LinkedIn"
               >
-                <AiFillLinkedin size="4.5rem" />
+                <AiFillLinkedin size={48} />
+              </SocialIcons>
+              <SocialIcons
+                href="https://app.hackthebox.com/profile/2520835"
+                target="_blank"
+                aria-label="Check out my LinkedIn"
+              >
+                <SiHackthebox size={48} />
               </SocialIcons>
             </Icons>
           </Nav>
