@@ -30,7 +30,7 @@ function App() {
     setIsMenu(width <= 1124);
   }, [width]);
 
-  document.title = "Joseph Huntley | .NET & React Specialist";
+  document.title = "Joseph Huntley | Cybersecurity Specialist | Aspiring Digital Forensics Professional | Malware Analysis Enthusiast";
 
   const aboutScroll = () => aboutRef.current.scrollIntoView();
 

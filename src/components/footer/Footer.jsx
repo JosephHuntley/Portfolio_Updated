@@ -32,7 +32,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Cyber Security Specialist</Slogan>
+          <Slogan>Cybersecurity Specialist | Aspiring Digital Forensics Professional | Malware Analysis Enthusiast</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons
