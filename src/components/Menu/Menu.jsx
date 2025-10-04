@@ -23,7 +23,7 @@ const Menu = () => {
           href="/"
           style={{ display: "flex", alignItems: "center", color: "white" }}
         >
-          <DiCssdeck size="3rem" /> <span>Portfolio</span>
+          <DiCssdeck size="3rem" /> <span>Joseph Huntley</span>
         </a>
 
         <Hamburger
@@ -46,9 +46,9 @@ const Menu = () => {
               <li onClick={() => setIsOpen(false)}>
                 <NavLink href="#about">About</NavLink>
               </li>
-              {/* <li onClick={() => setIsOpen(false)}>
-                <NavLink href="#blog">Blog</NavLink> 
-              </li>*/}
+              <li onClick={() => setIsOpen(false)}>
+                <NavLink target="_blank" rel="noopener noreferrer" href="https://cybersandbox7.wordpress.com/">Blog</NavLink> 
+              </li>
             </Links>
             <Icons>
               <SocialIcons
@@ -70,7 +70,7 @@ const Menu = () => {
                 target="_blank"
                 aria-label="Check out my LinkedIn"
               >
-                <SiHackthebox size={48} />
+                {/* <SiHackthebox size={48} /> */}
               </SocialIcons>
             </Icons>
           </Nav>

@@ -30,7 +30,7 @@ const Header = () => {
 
         <NavLink href="#about">About</NavLink>
 
-        {/* <NavLink href="#blog">Blog</NavLink> */}
+        <NavLink target="_blank" rel="noopener noreferrer" href="https://cybersandbox7.wordpress.com/">Blog</NavLink>
       </Div2>
       <Div3>
         <SocialIcons
@@ -47,9 +47,9 @@ const Header = () => {
         >
           <AiFillLinkedin size={32} />
         </SocialIcons>
-        <SocialIcons href="https://app.hackthebox.com/profile/2520835">
+        {/* <SocialIcons href="https://app.hackthebox.com/profile/2520835">
           <SiHackthebox size={32} />
-        </SocialIcons>
+        </SocialIcons> */}
       </Div3>
     </Container>
   );

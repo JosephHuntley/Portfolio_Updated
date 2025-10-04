@@ -43,9 +43,12 @@ export const BlogCard = styled.div`
 `;
 export const TitleContent = styled.div`
   text-align: center;
-  z-index: 20;
+  z-index: 4;
   width: 100%;
   color: #e4e6e7;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0rem 1.5rem;
+  }
 `;
 
 export const HeaderThree = styled.h3`
@@ -85,7 +88,7 @@ export const CardInfo = styled.p`
   overflow-x: scroll;
   margin-bottom: 1rem;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 1.5rem;
   }
 `;
 
@@ -114,6 +117,11 @@ export const TagList = styled.ul`
   justify-content: space-around;
   padding: 2rem;
   padding-top: 1rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ✅ correct syntax */
+    gap: 1rem; /* optional: adds spacing between grid items */
+  }
 `;
 export const Tag = styled.li`
   color: #d8bfbf;
