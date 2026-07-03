@@ -1,7 +1,4 @@
-import { useApolloClient, useQuery } from "@apollo/client";
-import React from "react";
-import { gql } from "@apollo/client";
-import { CircleLoader } from "react-spinners";
+import { Link } from "react-router-dom";
 import {
   BlogCard,
   HeaderThree,
@@ -16,62 +13,33 @@ import {
   SectionTitle,
   Section,
 } from "../../styles/globalComponents";
+import { getAllPosts } from "../../lib/posts";
 
 import BlogImg from "../../../public/BlogCoverImage.webp";
 
-const BLOG_QUERY = gql`
-  {
-    user(username: "JHuntley") {
-      publication {
-        posts {
-          _id
-          title
-          brief
-          isActive
-          slug
-          coverImage
-        }
-      }
-    }
-  }
-`;
-
 const Blog = () => {
-  const { data, error, loading } = useQuery(BLOG_QUERY);
+  const posts = getAllPosts();
 
-  if (loading)
-    return (
-      <Section id="blog">
-        <CircleLoader color="#fff" size={100} loading={loading} />
-      </Section>
-    );
-  if (error) return <pre id="blog">{error.message}</pre>;
-
-  const posts = data.user.publication.posts.filter((post) => post.isActive);
+  if (posts.length === 0) return null;
 
   return (
     <Section id="blog">
       <SectionTitle main>Blog</SectionTitle>
       <Grid>
         {posts.map((post) => (
-          <a
-            key={post._id}
-            href={`https://joehuntley.hashnode.dev/${post.slug}`}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link key={post.slug} to={`/blog/${post.slug}`}>
             <BlogCard>
               <Img
                 alt={post.title}
-                src={post.coverImage != "" ? post.coverImage : BlogImg}
+                src={post.coverImage ? post.coverImage : BlogImg}
               />
               <TitleContent>
                 <HeaderThree>{post.title}</HeaderThree>
                 <Hr />
               </TitleContent>
-              <CardInfo className="card-info">{post.brief}</CardInfo>
+              <CardInfo className="card-info">{post.excerpt}</CardInfo>
             </BlogCard>
-          </a>
+          </Link>
         ))}
       </Grid>
       <SectionDivider />

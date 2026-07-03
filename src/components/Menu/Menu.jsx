@@ -47,7 +47,7 @@ const Menu = () => {
                 <NavLink href="#about">About</NavLink>
               </li>
               <li onClick={() => setIsOpen(false)}>
-                <NavLink target="_blank" rel="noopener noreferrer" href="https://cybersandbox7.wordpress.com/">Blog</NavLink> 
+                <NavLink href="/blog">Blog</NavLink> 
               </li>
             </Links>
             <Icons>

@@ -24,13 +24,10 @@ const Header = () => {
         </a>
       </Div1>
       <Div2>
-        <NavLink href="#projects">Projects</NavLink>
-
-        <NavLink href="#tech">Technologies</NavLink>
-
-        <NavLink href="#about">About</NavLink>
-
-        <NavLink target="_blank" rel="noopener noreferrer" href="https://cybersandbox7.wordpress.com/">Blog</NavLink>
+        <NavLink href="/#projects">Projects</NavLink>
+        <NavLink href="/#tech">Technologies</NavLink>
+        <NavLink href="/#about">About</NavLink>
+        <NavLink href="/blog">Blog</NavLink>
       </Div2>
       <Div3>
         <SocialIcons

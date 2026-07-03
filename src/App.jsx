@@ -1,25 +1,14 @@
 import { useRef, lazy, Suspense, useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import { BarLoader } from "react-spinners";
 const Header = lazy(() => import("./components/header/Header"));
 const Theme = lazy(() => import("./styles/theme"));
-const BgAnimation = lazy(() =>
-  import("./components/BackgroundAnimation/BackgroundAnimation"),
-);
-import { Section } from "./styles/globalComponents";
-const Hero = lazy(() => import("./components/hero/Hero"));
-const Projects = lazy(() => import("./components/projects/Projects"));
-const Technologies = lazy(() =>
-  import("./components/technologies/Technologies"),
-);
-const Timeline = lazy(() => import("./components/timeline/TimeLine"));
-const Accomplishments = lazy(() =>
-  import("./components/accomplishments/Accomplishments"),
-);
 const Footer = lazy(() => import("./components/footer/Footer"));
-const Contact = lazy(() => import("./components/contact/Contact"));
+const Blog = lazy(() => import("./components/Blog/Blog"));
+const BlogPost = lazy(() => import("./components/Blog/BlogPost"));
+const HomePage = lazy(() => import("./pages/HomePage"));
 import useWindowSize from "./customHooks/useWindowSize";
 import Menu from "./components/Menu/Menu";
-import Blog from "./components/Blog/Blog";
 
 function App() {
   const aboutRef = useRef(null);
@@ -30,7 +19,8 @@ function App() {
     setIsMenu(width <= 1124);
   }, [width]);
 
-  document.title = "Joseph Huntley | Cybersecurity Specialist | Aspiring Digital Forensics Professional | Malware Analysis Enthusiast";
+  document.title =
+    "Joseph Huntley | Cybersecurity Specialist | Aspiring Digital Forensics Professional | Malware Analysis Enthusiast";
 
   const aboutScroll = () => aboutRef.current.scrollIntoView();
 
@@ -38,16 +28,14 @@ function App() {
     <Suspense fallback={<BarLoader color="#9cc9e3" />}>
       <Theme>
         {isMenu ? <Menu /> : <Header />}
-        <Section grid>
-          <Hero aboutScroll={aboutScroll} />
-          <BgAnimation />
-        </Section>
-        <Projects />
-        <Technologies />
-        <Timeline aboutRef={aboutRef} />
-        <Accomplishments />
-        {/* <Blog /> */}
-        <Contact />
+        <Routes>
+          <Route
+            path="/"
+            element={<HomePage aboutRef={aboutRef} aboutScroll={aboutScroll} />}
+          />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+        </Routes>
         <Footer />
       </Theme>
     </Suspense>
