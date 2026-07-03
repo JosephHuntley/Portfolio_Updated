@@ -2,6 +2,15 @@
 
 export const projects = [
   {
+    id: 8,
+    title: "Case Management (Digital Forensics)",
+    description:
+      "An open source case management platform built to streamline investigations from case intake through reporting. The application features secure authentication, role-based access control, case and evidence management, chain of custody tracking, audit logging, and structured reporting. Developed with FastAPI, PostgreSQL, and React, the platform emphasizes secure software design, data integrity, and accountability while supporting efficient investigative workflows.",
+    tags: ["Python", "React", "PostgreSQL", "FastAPI", "Digital Forensics"],
+    source: "",
+    visit: "",
+  },
+  {
     id: 4,
     title: "Corporate Network Simulation",
     description:
