@@ -7,7 +7,7 @@ export const projects = [
     description:
       "An open source case management platform built to streamline investigations from case intake through reporting. The application features secure authentication, role-based access control, case and evidence management, chain of custody tracking, audit logging, and structured reporting. Developed with FastAPI, PostgreSQL, and React, the platform emphasizes secure software design, data integrity, and accountability while supporting efficient investigative workflows.",
     tags: ["Python", "React", "PostgreSQL", "FastAPI", "Digital Forensics"],
-    source: "",
+    source: "https://github.com/JosephHuntley/Case-Management-DF",
     visit: "",
   },
   {
@@ -17,7 +17,7 @@ export const projects = [
       "A simulated corporate network designed and deployed featuring core services such as Active Directory, database, and web servers. Enforcing network security policies through a pfSense firewall with traffic routing and filtering. Wazuh provided endpoint monitoring, log analysis, and real-time alerting of security incidents. The architecture includes dedicated VLANs for the DMZ, security, and internal corporate systems to reflect segmentation. Security Onion was integrated to deliver network intrusion detection and enable proactive threat hunting across segmented traffic.",
     tags: ["pfSense", "Wazuh", "Security Onion", "Active Directory"],
     source: "",
-    visit: "",
+    visit: "/blog/network-overview",
   },
   {
   id: 7,
@@ -52,7 +52,7 @@ export const projects = [
       "The Red Team Lab consists of a controlled environment featuring Kali Linux, ParrotOS, and vulnerable targets such as DVWA, designed for practicing adversary emulation. The lab enables reconnaissance and vulnerability enumeration using tools like Nmap, and supports exploitation of application and service vulnerabilities with Metasploit to simulate gaining shell access and performing post-exploitation persistence. This setup provides a safe, hands-on environment for learning offensive security techniques.",
     tags: ["Kali", "Parrot", "DVWA", "Nmap", "Metasploit"],
     source: "",
-    visit: "",
+    visit: "/blog/red-team-overview",
     id: 2,
   },
   

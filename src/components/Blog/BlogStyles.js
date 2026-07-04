@@ -73,3 +73,37 @@ export const CardInfo = styled.p`
     padding: 0.3rem 1rem;
   }
 `;
+
+export const Pagination = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0 40px;
+`;
+
+export const PageButton = styled.button`
+  background: transparent;
+  border: 1px solid #9cc9e3;
+  color: #9cc9e3;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover:not(:disabled) {
+    background: #9cc9e3;
+    color: #0f1624;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+`;
+
+export const PageInfo = styled.span`
+  color: #e4e6e7;
+  font-size: 1.4rem;
+`;

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { AiFillGithub } from "react-icons/ai";
 
 import {
   BlogCard,
@@ -45,10 +47,21 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              {/* Uncomment once links are attached  */}
-              {/* <ExternalLinks href={p.visit} target="_blank" rel="noreferrer">
-                Read More
-              </ExternalLinks> */}
+              {p.source && (
+                <ExternalLinks href={p.source} target="_blank" rel="noreferrer">
+                  Source
+                </ExternalLinks>
+              )}
+              {p.visit &&
+                (p.visit.startsWith("/") ? (
+                  <ExternalLinks as={Link} to={p.visit}>
+                    Read More
+                  </ExternalLinks>
+                ) : (
+                  <ExternalLinks href={p.visit} target="_blank" rel="noreferrer">
+                    Read More
+                  </ExternalLinks>
+                ))}
             </UtilityList>
           </BlogCard>
         );

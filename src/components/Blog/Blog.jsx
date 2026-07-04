@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   BlogCard,
@@ -7,6 +8,9 @@ import {
   Grid,
   Img,
   CardInfo,
+  Pagination,
+  PageButton,
+  PageInfo,
 } from "./BlogStyles";
 import {
   SectionDivider,
@@ -17,16 +21,28 @@ import { getAllPosts } from "../../lib/posts";
 
 import BlogImg from "../../../public/BlogCoverImage.webp";
 
+const POSTS_PER_PAGE = 6;
+
 const Blog = () => {
   const posts = getAllPosts();
+  const [page, setPage] = useState(1);
 
   if (posts.length === 0) return null;
+
+  const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+  const start = (page - 1) * POSTS_PER_PAGE;
+  const visiblePosts = posts.slice(start, start + POSTS_PER_PAGE);
+
+  const goToPage = (next) => {
+    setPage(next);
+    document.getElementById("blog")?.scrollIntoView({ block: "start" });
+  };
 
   return (
     <Section id="blog">
       <SectionTitle main>Blog</SectionTitle>
       <Grid>
-        {posts.map((post) => (
+        {visiblePosts.map((post) => (
           <Link key={post.slug} to={`/blog/${post.slug}`}>
             <BlogCard>
               <Img
@@ -42,6 +58,22 @@ const Blog = () => {
           </Link>
         ))}
       </Grid>
+      {totalPages > 1 && (
+        <Pagination>
+          <PageButton onClick={() => goToPage(page - 1)} disabled={page === 1}>
+            Prev
+          </PageButton>
+          <PageInfo>
+            Page {page} of {totalPages}
+          </PageInfo>
+          <PageButton
+            onClick={() => goToPage(page + 1)}
+            disabled={page === totalPages}
+          >
+            Next
+          </PageButton>
+        </Pagination>
+      )}
       <SectionDivider />
     </Section>
   );

@@ -38,3 +38,8 @@ export const TextArea = styled.textarea`
     border: 2px solid rgba(242, 245, 247, 1);
   }
 `;
+
+export const StatusMessage = styled.p`
+  color: ${(props) => (props.$type === "error" ? "#ff6b6b" : "#6bcf7f")};
+  font-size: 1.4rem;
+`;
