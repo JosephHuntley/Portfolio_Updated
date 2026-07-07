@@ -1,6 +1,6 @@
 ---
 title: "Your Smart TV Might Be Someone Else's Attack Infrastructure: Inside the NetNut/Popa Takedown"
-date: "2026-07-05"
+date: "2026-07-06"
 excerpt: "An overview of botnet proxies and the recent netnut (popa) malware"
 coverImage: "/blog/netnut/netnutseizure.webp"
 tags: ["Malware", "Botnet", "IoT"]
